@@ -53,7 +53,6 @@
                 data-quantity="1"
                 data-allow-remember-me="false">
             </script>
-
             <script>
                 document.getElementById('stripeButton').setAttribute('data-amount', totalPrice);
             </script>

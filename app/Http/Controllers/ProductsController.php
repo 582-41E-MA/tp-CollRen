@@ -100,6 +100,7 @@ class ProductsController extends Controller
         // Mettre à jour la quantité en stock
         $product->quantite_stock -= $request->quantity;
         $product->save();
+        
 
         return redirect()->back()->with('success', 'Paiement effectué avec succès.');
     }
