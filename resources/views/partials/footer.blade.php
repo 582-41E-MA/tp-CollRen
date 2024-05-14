@@ -3,3 +3,6 @@
         <h1 class="text-xl font-bold">Footer</h1>
     </div>
 </footer>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 @extends('partials.base')
-@section('title' $aaaa)
+@section('title' ,'$aaaa')
 @section('content')
 <br><br><br>
 <br><br><br>

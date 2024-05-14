@@ -4,7 +4,6 @@
 
 @section('content')
 
-    <body>
 
         <main>
             <div class="collections">
@@ -17,7 +16,5 @@
             </div>
         </main>
 
-    </body>
 @endsection
 
-</html>
