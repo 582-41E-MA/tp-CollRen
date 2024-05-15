@@ -1,5 +1,6 @@
 
-<button  @class([
+<button href=$href class="block rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600"
+@class([
     'bg-blue-500 text-clr-mid-100 font-bold py-2 px-4 border border-clr-mid-900 hover:opacity-70 rounded',
     'bg-red-500' =>$type=='danger',
     'text-clr-fonce-900 bg-clr-mid-100' =>$type=='warning',
