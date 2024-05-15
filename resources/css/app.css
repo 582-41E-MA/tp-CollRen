@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Lemons";
+    src: url("../fonts/Lemons.ttf");
+}
+
+@font-face {
+    font-family: "JosephinSans";
+    src: url("../fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Concert";
+    src: url("../fonts/ConcertOne-Regular.ttf");
+}
+
+@keyframes alert {
+    0% {
+        top:-200px;
+    }
+    10% {
+        top:0;
+    }
+    30% {
+        top:200px;
+    }
+    70% {
+        top:200px;
+    }
+    100% {
+        top:-200px;
+    }
+}
+
+:root{
+    --police-principale :"Lemons";
+}
+
+html{
+    font-family: "JosephinSans";
+}
+
+h1{
+    font-family: "Concert";
+    color: white;
+}
+
+.active{
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+img{
+    width: 30%;
+}
+
+.alert{
+    top:-200px;
+    animation: alert 5000ms ease-in-out 100ms backwards;
+}

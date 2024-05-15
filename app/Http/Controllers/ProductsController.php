@@ -39,6 +39,12 @@ class ProductsController extends Controller
         $product->prix = $request->prix;
         $product->quantite_stock = $request->quantite_stock;
         
+        if ($request->image) {
+
+            $path = $request->image->store("products", "public");
+            $product->image = $path;
+        }
+
         $product->save();
 
         return redirect()->route("products.index")->with("success", "Le produit à été ajouté avec succès");

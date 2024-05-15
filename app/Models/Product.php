@@ -9,5 +9,9 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = array("nom", "descritpion","prix" ,"quantite_stock");
+    protected $fillable = array("nom", "description","prix" ,"quantite_stock", "image");
+
+    public function imageFullPath(){
+        return "/storage/$this->image";
+    }
 }
